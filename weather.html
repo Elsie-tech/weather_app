@@ -38,18 +38,7 @@
         </div>
     </div>
 </body>
-<script>
-    const apikey = "66bb1553c77b794a4c0b30c1155316c";
-    const apiurl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=Kigali";
-async function checkweather(){
-    const response = await fetch(apikey + `&appid=${apikey}`);
-    var data = await response.json();
-    console.log(data);
-    document.querySelector(".city").innerHTML = data.name; 
-
-}
-checkWeather();
-</script>
+<script src="weather.js"></script>
 
 
 </html>
